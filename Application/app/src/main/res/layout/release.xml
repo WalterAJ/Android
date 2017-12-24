@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="5dp"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="60px"
+                android:layout_centerInParent="true"
+                android:text="编辑内容"/>
+            <TextView
+                android:id="@+id/put_release"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50px"
+            android:clickable="true"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/title_release"/>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+<EditText
+    android:id="@+id/release_title"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@null"
+
+    android:hint="请输入标题"/>
+    <View
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="2dip"
+
+        android:background="#666666"
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dip"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+    <EditText
+        android:id="@+id/release_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="请输入内容"
+        android:layout_marginTop="10dp" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/addPic_btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:clickable="true"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/addpic"
+        ></ImageView>
+</LinearLayout>
